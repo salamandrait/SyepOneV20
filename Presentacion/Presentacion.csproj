@@ -1,0 +1,848 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A0A92BA-1F66-4484-8381-708E55C7F006}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.5.0.2, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AManager.designer.cs">
+      <DependentUpon>AManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMoneda.Designer.cs">
+      <DependentUpon>FMoneda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMonedaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMonedaLista.Designer.cs">
+      <DependentUpon>FMonedaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCuentasIE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCuentasIE.Designer.cs">
+      <DependentUpon>FCuentasIE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCuentasIELista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCuentasIELista.Designer.cs">
+      <DependentUpon>FCuentasIELista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FPago.Designer.cs">
+      <DependentUpon>FPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FVOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FVOtros.designer.cs">
+      <DependentUpon>FVOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FTipoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FTipoCliente.Designer.cs">
+      <DependentUpon>FTipoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPais.Designer.cs">
+      <DependentUpon>FPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FTipoClienteLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FTipoClienteLista.Designer.cs">
+      <DependentUpon>FTipoClienteLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPaisLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPaisLista.Designer.cs">
+      <DependentUpon>FPaisLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSegmento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSegmento.Designer.cs">
+      <DependentUpon>FSegmento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSegmentoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSegmentoLista.Designer.cs">
+      <DependentUpon>FSegmentoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCondicionPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCondicionPago.Designer.cs">
+      <DependentUpon>FCondicionPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCondicionPagoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCondicionPagoLista.Designer.cs">
+      <DependentUpon>FCondicionPagoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FDCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FDCompra.Designer.cs">
+      <DependentUpon>FDCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FFCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FFCompra.Designer.cs">
+      <DependentUpon>FFCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FCCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FCCompra.Designer.cs">
+      <DependentUpon>FCCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FArtCargarC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FArtCargarC.designer.cs">
+      <DependentUpon>FArtCargarC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FCOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FCOtros.designer.cs">
+      <DependentUpon>FCOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FPCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FPCompra.Designer.cs">
+      <DependentUpon>FPCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FCliente.Designer.cs">
+      <DependentUpon>FCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FProveedor.Designer.cs">
+      <DependentUpon>FProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FClienteLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FClienteLista.Designer.cs">
+      <DependentUpon>FClienteLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FProveedorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FProveedorLista.Designer.cs">
+      <DependentUpon>FProveedorLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FChequera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FChequera.Designer.cs">
+      <DependentUpon>FChequera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FChequeraDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FChequeraDetalle.Designer.cs">
+      <DependentUpon>FChequeraDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FChequeraLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FChequeraLista.Designer.cs">
+      <DependentUpon>FChequeraLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovCajaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovCajaLista.Designer.cs">
+      <DependentUpon>FMovCajaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovBancoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovBancoLista.Designer.cs">
+      <DependentUpon>FMovBancoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovCaja.Designer.cs">
+      <DependentUpon>FMovCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FOPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FOPago.Designer.cs">
+      <DependentUpon>FOPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FTarjeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FTarjeta.Designer.cs">
+      <DependentUpon>FTarjeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FOpagoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FOpagoLista.Designer.cs">
+      <DependentUpon>FOpagoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FTarjetaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FTarjetaLista.Designer.cs">
+      <DependentUpon>FTarjetaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FBeneficiario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FBeneficiario.Designer.cs">
+      <DependentUpon>FBeneficiario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FCuenta.Designer.cs">
+      <DependentUpon>FCuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FCaja.Designer.cs">
+      <DependentUpon>FCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FBeneficiarioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FBeneficiarioLista.Designer.cs">
+      <DependentUpon>FBeneficiarioLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FCuentaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FCuentaLista.Designer.cs">
+      <DependentUpon>FCuentaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FCajaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FCajaLista.Designer.cs">
+      <DependentUpon>FCajaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FMovBanco.Designer.cs">
+      <DependentUpon>FMovBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FRIVA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FRIVA.Designer.cs">
+      <DependentUpon>FRIVA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FEmpresa.designer.cs">
+      <DependentUpon>FEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FImpuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FImpuesto.designer.cs">
+      <DependentUpon>FImpuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FIslr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FIslr.Designer.cs">
+      <DependentUpon>FIslr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FIslrLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FIslrLista.Designer.cs">
+      <DependentUpon>FIslrLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FBanco.Designer.cs">
+      <DependentUpon>FBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloBanco\FBancoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloBanco\FBancoLista.Designer.cs">
+      <DependentUpon>FBancoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FCorrelativos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FCorrelativos.Designer.cs">
+      <DependentUpon>FCorrelativos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FCorrelativosLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FCorrelativosLista.Designer.cs">
+      <DependentUpon>FCorrelativosLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FTipoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FTipoProveedor.Designer.cs">
+      <DependentUpon>FTipoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloCompra\FTipoProveedorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloCompra\FTipoProveedorLista.Designer.cs">
+      <DependentUpon>FTipoProveedorLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FMapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FMapa.designer.cs">
+      <DependentUpon>FMapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FMapaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FMapaLista.designer.cs">
+      <DependentUpon>FMapaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FUsuario.designer.cs">
+      <DependentUpon>FUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloConfig\FUsuarioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloConfig\FUsuarioLista.designer.cs">
+      <DependentUpon>FUsuarioLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FArtPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FArtPrecio.designer.cs">
+      <DependentUpon>FArtPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FArtUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FArtUnidad.designer.cs">
+      <DependentUpon>FArtUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FArtUnidadLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FArtUnidadLista.designer.cs">
+      <DependentUpon>FArtUnidadLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FColor.Designer.cs">
+      <DependentUpon>FColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FStockInventarioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FStockInventarioLista.designer.cs">
+      <DependentUpon>FStockInventarioLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FUbicacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FUbicacion.Designer.cs">
+      <DependentUpon>FUbicacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FUbucacionLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FUbucacionLista.Designer.cs">
+      <DependentUpon>FUbucacionLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FColorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FColorLista.Designer.cs">
+      <DependentUpon>FColorLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FLinea.Designer.cs">
+      <DependentUpon>FLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FLineaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FLineaLista.Designer.cs">
+      <DependentUpon>FLineaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FCategoria.Designer.cs">
+      <DependentUpon>FCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FCategoriaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FCategoriaLista.Designer.cs">
+      <DependentUpon>FCategoriaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FSubLinea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FSubLinea.Designer.cs">
+      <DependentUpon>FSubLinea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FSubLineaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FSubLineaLista.Designer.cs">
+      <DependentUpon>FSubLineaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FDeposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FDeposito.Designer.cs">
+      <DependentUpon>FDeposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FDepositoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FDepositoLista.Designer.cs">
+      <DependentUpon>FDepositoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FArticulo.Designer.cs">
+      <DependentUpon>FArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FArticuloLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FArticuloLista.Designer.cs">
+      <DependentUpon>FArticuloLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FVendedor.Designer.cs">
+      <DependentUpon>FVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FPrecio.Designer.cs">
+      <DependentUpon>FPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FVendedorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FVendedorLista.Designer.cs">
+      <DependentUpon>FVendedorLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloVenta\FPrecioLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloVenta\FPrecioLista.Designer.cs">
+      <DependentUpon>FPrecioLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FUnidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FUnidad.Designer.cs">
+      <DependentUpon>FUnidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FZona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FZona.Designer.cs">
+      <DependentUpon>FZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModuloInventario\FUnidadLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloInventario\FUnidadLista.Designer.cs">
+      <DependentUpon>FUnidadLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FImportar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FImportar.designer.cs">
+      <DependentUpon>FImportar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FZonaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FZonaLista.Designer.cs">
+      <DependentUpon>FZonaLista.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{14cbf729-cd55-4ed5-bab7-fe1e008898f2}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AManager.resx">
+      <DependentUpon>AManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMoneda.resx">
+      <DependentUpon>FMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMonedaLista.resx">
+      <DependentUpon>FMonedaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCuentasIE.resx">
+      <DependentUpon>FCuentasIE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCuentasIELista.resx">
+      <DependentUpon>FCuentasIELista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FPago.resx">
+      <DependentUpon>FPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FVOtros.resx">
+      <DependentUpon>FVOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FTipoCliente.resx">
+      <DependentUpon>FTipoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPais.resx">
+      <DependentUpon>FPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FTipoClienteLista.resx">
+      <DependentUpon>FTipoClienteLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPaisLista.resx">
+      <DependentUpon>FPaisLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSegmento.resx">
+      <DependentUpon>FSegmento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSegmentoLista.resx">
+      <DependentUpon>FSegmentoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCondicionPago.resx">
+      <DependentUpon>FCondicionPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCondicionPagoLista.resx">
+      <DependentUpon>FCondicionPagoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FDCompra.resx">
+      <DependentUpon>FDCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FFCompra.resx">
+      <DependentUpon>FFCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FCCompra.resx">
+      <DependentUpon>FCCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FArtCargarC.resx">
+      <DependentUpon>FArtCargarC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FCOtros.resx">
+      <DependentUpon>FCOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FPCompra.resx">
+      <DependentUpon>FPCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FCliente.resx">
+      <DependentUpon>FCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FProveedor.resx">
+      <DependentUpon>FProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FClienteLista.resx">
+      <DependentUpon>FClienteLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FProveedorLista.resx">
+      <DependentUpon>FProveedorLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FChequera.resx">
+      <DependentUpon>FChequera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FChequeraDetalle.resx">
+      <DependentUpon>FChequeraDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FChequeraLista.resx">
+      <DependentUpon>FChequeraLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FMovCajaLista.resx">
+      <DependentUpon>FMovCajaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FMovBancoLista.resx">
+      <DependentUpon>FMovBancoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FMovCaja.resx">
+      <DependentUpon>FMovCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FOPago.resx">
+      <DependentUpon>FOPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FTarjeta.resx">
+      <DependentUpon>FTarjeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FOpagoLista.resx">
+      <DependentUpon>FOpagoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FTarjetaLista.resx">
+      <DependentUpon>FTarjetaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FBeneficiario.resx">
+      <DependentUpon>FBeneficiario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FCuenta.resx">
+      <DependentUpon>FCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FCaja.resx">
+      <DependentUpon>FCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FBeneficiarioLista.resx">
+      <DependentUpon>FBeneficiarioLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FCuentaLista.resx">
+      <DependentUpon>FCuentaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FCajaLista.resx">
+      <DependentUpon>FCajaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FMovBanco.resx">
+      <DependentUpon>FMovBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FRIVA.resx">
+      <DependentUpon>FRIVA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FEmpresa.resx">
+      <DependentUpon>FEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FImpuesto.resx">
+      <DependentUpon>FImpuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FIslr.resx">
+      <DependentUpon>FIslr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FIslrLista.resx">
+      <DependentUpon>FIslrLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FBanco.resx">
+      <DependentUpon>FBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloBanco\FBancoLista.resx">
+      <DependentUpon>FBancoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FCorrelativos.resx">
+      <DependentUpon>FCorrelativos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FCorrelativosLista.resx">
+      <DependentUpon>FCorrelativosLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FTipoProveedor.resx">
+      <DependentUpon>FTipoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloCompra\FTipoProveedorLista.resx">
+      <DependentUpon>FTipoProveedorLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FMapa.resx">
+      <DependentUpon>FMapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FMapaLista.resx">
+      <DependentUpon>FMapaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FUsuario.resx">
+      <DependentUpon>FUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloConfig\FUsuarioLista.resx">
+      <DependentUpon>FUsuarioLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FArtPrecio.resx">
+      <DependentUpon>FArtPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FArtUnidad.resx">
+      <DependentUpon>FArtUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FArtUnidadLista.resx">
+      <DependentUpon>FArtUnidadLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FColor.resx">
+      <DependentUpon>FColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FStockInventarioLista.resx">
+      <DependentUpon>FStockInventarioLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FUbicacion.resx">
+      <DependentUpon>FUbicacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FUbucacionLista.resx">
+      <DependentUpon>FUbucacionLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FColorLista.resx">
+      <DependentUpon>FColorLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FLinea.resx">
+      <DependentUpon>FLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FLineaLista.resx">
+      <DependentUpon>FLineaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FCategoria.resx">
+      <DependentUpon>FCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FCategoriaLista.resx">
+      <DependentUpon>FCategoriaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FSubLinea.resx">
+      <DependentUpon>FSubLinea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FSubLineaLista.resx">
+      <DependentUpon>FSubLineaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FDeposito.resx">
+      <DependentUpon>FDeposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FDepositoLista.resx">
+      <DependentUpon>FDepositoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FArticulo.resx">
+      <DependentUpon>FArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FArticuloLista.resx">
+      <DependentUpon>FArticuloLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FVendedor.resx">
+      <DependentUpon>FVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FPrecio.resx">
+      <DependentUpon>FPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FVendedorLista.resx">
+      <DependentUpon>FVendedorLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloVenta\FPrecioLista.resx">
+      <DependentUpon>FPrecioLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FUnidad.resx">
+      <DependentUpon>FUnidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FZona.resx">
+      <DependentUpon>FZona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuloInventario\FUnidadLista.resx">
+      <DependentUpon>FUnidadLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FZonaLista.resx">
+      <DependentUpon>FZonaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FImportar.resx">
+      <DependentUpon>FImportar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceptar.png" />
+    <None Include="Resources\Cancelar.png" />
+    <None Include="Resources\direction_left.png" />
+    <None Include="Resources\direction_right.png" />
+    <None Include="Resources\Eliminar.png" />
+    <None Include="Resources\Imprimir.png" />
+    <None Include="Resources\Left.png" />
+    <None Include="Resources\Listar.png" />
+    <None Include="Resources\Nuevo.png" />
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LIMPIA.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
